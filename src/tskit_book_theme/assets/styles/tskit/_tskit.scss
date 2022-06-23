@@ -1,0 +1,92 @@
+@import "../tskit/palette";
+
+/* TYPOGRAPHY */
+
+$font-family-sans-serif: rothwood, serif;
+$font-family-sans-serif-2: sofia-pro, sans-serif;
+
+::-moz-selection {
+  background-color: $brand-color-1;
+  color: $color-1;
+}
+
+::selection {
+  background-color: $brand-color-1;
+  color: $color-1;
+}
+
+html {
+  font-size: 100%; // 16px
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: $font-family-sans-serif-2;
+}
+
+/* TYPOGRAPHY COLOURS*/
+
+.main-content {
+  color: $color-1;
+}
+
+p {
+  color: inherit;
+}
+
+.content-container a,
+.content-container a:visited {
+  color: $brand-color-2;
+}
+
+.content-container h1,
+.content-container h2,
+.content-container h3,
+.content-container h4,
+.content-container h5 {
+  color: $brand-color-2;
+}
+
+/* DESIGN */
+
+body {
+  background-color: $brand-color-7;
+  color: $color-1;
+}
+
+#site-navigation {
+  box-shadow: $box-shadow-2;
+}
+
+.sticky-top {
+  .tocsection {
+    border-color: $brand-color-2;
+  }
+  .bd-toc {
+    box-shadow: $box-shadow-2;
+    background-color: $brand-color-2;
+    nav {
+      background-color: $brand-color-2;
+    }
+  }
+  .bd-toc nav > .nav {
+    border-color: $brand-color-2;
+  }
+  box-shadow: $box-shadow-2;
+  background-color: $brand-color-2;
+  .headerbtn {
+    background-color: transparent;
+  }
+}
+
+.sd-fs-3,
+.sd-fs-3 > p {
+  color: $brand-color-2;
+}
+
+.admonition,
+div.admonition {
+  box-shadow: $box-shadow-1;
+  background-color: $brand-color-8;
+}
