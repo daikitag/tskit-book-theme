@@ -88,5 +88,5 @@ This theme draws inspiration and borrows design elements from the following them
 - [GitBook](https://docs.gitbook.com/)
 - The [Tailwind CSS docs](https://tailwindcss.com/docs/installation)
 
-[pypi-badge]: https://img.shields.io/pypi/v/sphinx-book-theme.svg
-[pypi-link]: https://pypi.org/project/sphinx-book-theme
+[pypi-badge]: https://img.shields.io/pypi/v/tskit-book-theme.svg
+[pypi-link]: https://pypi.org/project/tskit-book-theme

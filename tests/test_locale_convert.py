@@ -1,11 +1,11 @@
-from sphinx_book_theme._compile_translations import convert_json
+from tskit_book_theme._compile_translations import convert_json
 
 
 def test_convert(tmp_path, monkeypatch):
     # Generate folder structures needed
     path_translation = tmp_path / "assets" / "translations"
     path_jsons = path_translation / "jsons"
-    path_compiled = tmp_path / "theme" / "sphinx_book_theme" / "static" / "locales"
+    path_compiled = tmp_path / "theme" / "tskit_book_theme" / "static" / "locales"
     path_jsons.mkdir(parents=True)
     (path_jsons / "test.json").write_text(
         '[{"language":"English","symbol":"en","text":"Text"},'

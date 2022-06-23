@@ -16,7 +16,7 @@ from .header_buttons.launch import add_launch_buttons
 from ._transforms import HandleFootnoteTransform
 
 __version__ = "0.3.2"
-"""sphinx-book-theme version"""
+"""tskit-book-theme version"""
 
 SPHINX_LOGGER = logging.getLogger(__name__)
 MESSAGE_CATALOG_NAME = "booktheme"
@@ -25,7 +25,7 @@ MESSAGE_CATALOG_NAME = "booktheme"
 def get_html_theme_path():
     """Return list of HTML theme paths."""
     parent = Path(__file__).parent.resolve()
-    theme_path = parent / "theme" / "sphinx_book_theme"
+    theme_path = parent / "theme" / "tskit_book_theme"
     return theme_path
 
 
@@ -102,12 +102,12 @@ def hash_html_assets(app, pagename, templatename, context, doctree):
 
     The source files are in `static` while the built HTML is in `_static`.
     """
-    assets = ["scripts/sphinx-book-theme.js"]
+    assets = ["scripts/tskit-book-theme.js"]
     # Only append the book theme CSS if it's explicitly this theme. Sub-themes
     # will define their own CSS file, so if a sub-theme is used, this code is
     # run but the book theme CSS file won't be linked in Sphinx.
-    if app.config.html_theme == "sphinx_book_theme":
-        assets.append("styles/sphinx-book-theme.css")
+    if app.config.html_theme == "tskit_book_theme":
+        assets.append("styles/tskit-book-theme.css")
     hash_assets_for_files(assets, get_html_theme_path() / "static", context)
 
 
@@ -167,8 +167,8 @@ class Margin(Sidebar):
 def setup(app: Sphinx):
     # Register theme
     theme_dir = get_html_theme_path()
-    app.add_html_theme("sphinx_book_theme", theme_dir)
-    app.add_js_file("scripts/sphinx-book-theme.js")
+    app.add_html_theme("tskit_book_theme", theme_dir)
+    app.add_js_file("scripts/tskit-book-theme.js")
 
     # Translations
     locale_dir = os.path.join(theme_dir, "static", "locales")

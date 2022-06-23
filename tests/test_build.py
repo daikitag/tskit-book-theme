@@ -197,7 +197,7 @@ def test_header_repository_buttons(
             "use_edit_page_button": edit,
             "use_repository_button": repo,
             "use_issues_button": issues,
-            "repository_url": "https://github.com/executablebooks/sphinx-book-theme",
+            "repository_url": "https://github.com/benjeffery/tskit-book-theme",
         }
     }
     sphinx_build = sphinx_build_factory("base", confoverrides=confoverrides).build(
@@ -232,7 +232,7 @@ def test_repo_custombranch(sphinx_build_factory, file_regression):
             "html_theme_options": {
                 "repository_branch": "foo",
                 "use_edit_page_button": True,
-                "repository_url": "https://github.com/executablebooks/sphinx-book-theme",  # noqa: E501
+                "repository_url": "https://github.com/benjeffery/tskit-book-theme",  # noqa: E501
                 "launch_buttons": {"binderhub_url": "https://mybinder.org"},
             }
         },

@@ -16,7 +16,7 @@ This is a significant change in the HTML and CSS of the site, with the goal of m
 
 See the PRs below for where most of these changes occurred.
 
-([full changelog](https://github.com/executablebooks/sphinx-book-theme/compare/v0.2.0...d9c1abc4197445faab7892291520de448f363274))
+([full changelog](https://github.com/executablebooks/tskit-book-theme/compare/v0.2.0...d9c1abc4197445faab7892291520de448f363274))
 
 ### Enhancements made
 

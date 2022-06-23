@@ -2,4 +2,4 @@
 Sample ``conf.py``.
 """
 
-html_theme = "sphinx_book_theme"
+html_theme = "tskit_book_theme"

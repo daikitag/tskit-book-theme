@@ -1,6 +1,6 @@
 {
-  "name": "sphinx_book_theme",
-  "repository": "https://github.com/executablebooks/sphinx-book-theme",
+  "name": "tskit_book_theme",
+  "repository": "https://github.com/executablebooks/tskit-book-theme",
   "scripts": {
     "build": "webpack"
   },

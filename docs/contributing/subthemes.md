@@ -16,7 +16,7 @@ You can re-use this function in a sub-theme if you wish - to do so, look at the 
 For example, here's a Python snippet that reuses this function:
 
 ```python
-from sphinx_book_theme import hash_assets_for_files
+from tskit_book_theme import hash_assets_for_files
 
 def hash_html_assets(app, pagename, templatename, context, doctree):
     assets = ["styles/your-css-asset.css", "scripts/your-js-asset.js"]
@@ -34,7 +34,7 @@ As a best practice, you should put your sub-theme's CSS stylesheet in the `STATI
 Then, you can import this theme's CSS with:
 
 ```scss
-@import "sphinx-book-theme.css";
+@import "tskit-book-theme.css";
 
 // And include your own CSS below
 ```

@@ -4,7 +4,7 @@ build-backend = "sphinx_theme_builder"
 
 [tool.sphinx-theme-builder]
 node-version = "16.13.2"
-theme-name = "sphinx_book_theme"
+theme-name = "tskit_book_theme"
 additional-compiled-static-assets = [
   "locales/"
 ]
@@ -15,8 +15,8 @@ testpaths = [
 ]
 
 [project]
-name = "sphinx-book-theme"
-description = "A clean book theme for scientific explanations and documentation with Sphinx"
+name = "tskit-book-theme"
+description = "A clean book theme for tskit ecosystem projects"
 dynamic = ["version"]
 readme = "README.md"
 
@@ -80,4 +80,4 @@ test = [
 ]
 
 [project.entry-points]
-"sphinx.html_themes" = { sphinx_book_theme = "sphinx_book_theme" }
+"sphinx.html_themes" = { tskit_book_theme = "tskit_book_theme" }

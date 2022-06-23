@@ -26,14 +26,14 @@ sphinx-quickstart
 First install `sphinx-book-theme` with `pip`:
 
 ```
-pip install sphinx-book-theme
+pip install tskit-book-theme
 ```
 
 then, activate the theme in your Sphinx configuration (`conf.py`):
 
 ```
 ...
-html_theme = "sphinx_book_theme"
+html_theme = "tskit_book_theme"
 ...
 ```
 

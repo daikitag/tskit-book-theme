@@ -1,8 +1,10 @@
-# sphinx-book-theme
+# tskit-book-theme
 
 [![codecov][codecov-badge]][codecov-link] [![Documentation Status][rtd-badge]][rtd-link] [![PyPI][pypi-badge]][pypi-link]
 
-**An interactive book theme for Sphinx**.
+**An interactive book theme for tskit ecosystem projects**.
+
+Forked from sphinx-book-theme.
 
 This is a lightweight Sphinx theme designed to mimic the look-and-feel of an
 interactive book. It has the following primary features:
@@ -18,24 +20,24 @@ interactive book. It has the following primary features:
 
 ## Get started
 
-To get started with `sphinx-book-theme`, first install it with `pip`:
+To get started with `tskit-book-theme`, first install it with `pip`:
 
 ```
-pip install sphinx-book-theme
+pip install tskit-book-theme
 ```
 
 then, activate the theme in your Sphinx configuration (`conf.py`):
 
 ```
 ...
-html_theme = "sphinx_book_theme"
+html_theme = "tskit_book_theme"
 ...
 ```
 
 This will activate the Sphinx Book Theme for your documentation. Note that you may
 need to change your `html_theme_options` configuration depending on your previous
 theme. See the pages to the left for information about what you can configure with
-`sphinx-book-theme`.
+`tskit-book-theme`.
 
 ## Documentation
 

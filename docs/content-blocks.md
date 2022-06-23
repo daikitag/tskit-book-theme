@@ -19,7 +19,7 @@ There are a few content blocks that are unique to this theme.
 
 ## Quotations and epigraphs
 
-Here is what quotations and epigraphs look like in `sphinx-book-theme`:
+Here is what quotations and epigraphs look like in `tskit-book-theme`:
 
 ```{example} Default markdown quotes
 > Here's my quote, it's pretty neat.

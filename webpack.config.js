@@ -1,4 +1,4 @@
-// Webpack configuration for sphinx-book-theme
+// Webpack configuration for tskit-book-theme
 const { resolve } = require("path");
 const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
@@ -6,19 +6,19 @@ const dedent = require("dedent");
 
 // Compile our translation files
 const { exec } = require("child_process");
-exec("python src/sphinx_book_theme/_compile_translations.py");
+exec("python src/tskit_book_theme/_compile_translations.py");
 
 // Paths for various assets (sources and destinations)
 const staticPath = resolve(
   __dirname,
-  "src/sphinx_book_theme/theme/sphinx_book_theme/static"
+  "src/tskit_book_theme/theme/tskit_book_theme/static"
 );
 
 module.exports = {
   mode: "production",
   devtool: "source-map",
   entry: {
-    "sphinx-book-theme": ["./src/sphinx_book_theme/assets/scripts/index.js"],
+    "tskit-book-theme": ["./src/tskit_book_theme/assets/scripts/index.js"],
   },
   output: {
     filename: "scripts/[name].js",
@@ -39,7 +39,7 @@ module.exports = {
           {
             loader: "file-loader", // using the string as content, emits a file into the output directory.
             options: {
-              name: "styles/sphinx-book-theme.css", // the output file name
+              name: "styles/tskit-book-theme.css", // the output file name
             },
           },
           {

@@ -8,7 +8,7 @@ See below for some more specific sections
 ```{contents}
 ```
 
-## `src/sphinx_book_theme/` - Theme source files
+## `src/tskit_book_theme/` - Theme source files
 
 This folder contains all of the source files for this theme, and most changes to the theme are made somewhere inside this folder.
 
@@ -25,7 +25,7 @@ This folder contains all of the source files for this theme, and most changes to
 
 The other folders in this section are described in the next few sections.
 
-### `/theme/sphinx_book_theme/` - HTML templates
+### `/theme/tskit_book_theme/` - HTML templates
 
 This is the actual theme source that is packaged and distributed via PyPI.
 It contains HTML templates that make up the theme structure.
@@ -69,7 +69,7 @@ Here is a brief overview:
 
 ## `webpack.config.js` and `package.json` - Webpack and dependencies
 
-`webpack.config.js` contains the compilation code to convert source files like SCSS and JS in `src/sphinx_book_theme/assets/*` into the production assets in `src/sphinx_book_theme/theme/sphinx_book_theme/static/` .
+`webpack.config.js` contains the compilation code to convert source files like SCSS and JS in `src/tskit_book_theme/assets/*` into the production assets in `src/tskit_book_theme/theme/tskit_book_theme/static/` .
 This compilation is called by default, during development commands (see below).
 
 ## `tests/` - Testing infrastructure

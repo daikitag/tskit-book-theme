@@ -52,10 +52,10 @@ jobs:
 
     - name: Run pytest
       run: >
-        pytest --durations=10 --cov=sphinx_book_theme --cov-report=xml --cov-report=term-missing
+        pytest --durations=10 --cov=tskit_book_theme --cov-report=xml --cov-report=term-missing
 
     - name: Upload to Codecov
-      if: matrix.os == 'ubuntu-latest' && matrix.python-version == 3.7 && github.repository == 'executablebooks/sphinx-book-theme'
+      if: matrix.os == 'ubuntu-latest' && matrix.python-version == 3.7 && github.repository == 'benjeffery/tskit-book-theme'
       uses: codecov/codecov-action@v3.1.0
       with:
         name: ebp-sbt-pytests-py3.7

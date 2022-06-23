@@ -11,8 +11,8 @@ Follow these steps:
 1. Get the source code of this project using git:
 
    ```bash
-   git clone https://github.com/executablebooks/sphinx-book-theme
-   cd sphinx-book-theme
+   git clone https://github.com/benjeffery/tskit-book-theme
+   cd tskit-book-theme
    ```
 
 2. Ensure you have Python 3.7 or newer!
@@ -70,7 +70,7 @@ You may then preview them by opening one of the HTML files.
 Now that you've previewed the documentation, try making changes to this theme's assets and see how they affect the documentation builds.
 This is an easy way to preview the effect that your changes will make.
 
-First, **make your changes in `src/sphinx_book_theme/assets/`**.
+First, **make your changes in `src/tskit_book_theme/assets/`**.
 This folder contains all of the SCSS and Javascript that are used in this site.
 For example, edit one of the `scss` files to add or modify a rule.
 
@@ -81,7 +81,7 @@ Run the following command:
 $ tox -e compile
 ```
 
-This uses the [Sphinx Theme Builder](https://sphinx-theme-builder.readthedocs.io/) to compile our SCSS/JS files and bundle them with our theme at `src/sphinx_book_theme/theme/sphinx_book_theme/static`.
+This uses the [Sphinx Theme Builder](https://sphinx-theme-builder.readthedocs.io/) to compile our SCSS/JS files and bundle them with our theme at `src/tskit_book_theme/theme/tskit_book_theme/static`.
 These compiled assets are **not included** in our git repository, but they **are included** in distributions of the theme.
 
 Finally, **re-build the documentation** to preview your changes:
