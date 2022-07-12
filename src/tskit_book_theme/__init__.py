@@ -189,7 +189,7 @@ def setup(app: Sphinx):
     app.connect("html-page-context", add_header_buttons, priority=501)
 
     # Directives
-    app.add_directive("margin", Margin)
+    app.add_directive("margin", Margin, override=True)
 
     # Post-transforms
     app.add_post_transform(HandleFootnoteTransform)
