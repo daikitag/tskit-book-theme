@@ -59,6 +59,17 @@ body {
   box-shadow: $box-shadow-2;
 }
 
+nav.bd-links p.caption,
+#site-navigation nav ul.nav li a,
+#site-navigation nav ul.nav ul li a {
+  color: $brand-color-6;
+}
+#site-navigation nav ul.nav a:hover,
+#site-navigation nav ul.nav li.active > a,
+#site-navigation nav ul.nav li.active > a:hover {
+  color: $brand-color-8;
+}
+
 .sticky-top {
   .tocsection {
     border-color: $brand-color-2;
@@ -80,13 +91,93 @@ body {
   }
 }
 
+.bd-toc nav li.active > a.active {
+  border-left: $brand-color-8;
+}
+
+.bd-toc nav a:hover,
+.bd-toc nav li.active > a.active {
+  color: $brand-color-8;
+}
+
+.bd-toc .toc-entry a,
+.bd-toc div.onthispage {
+  color: $brand-color-6;
+}
+
 .sd-fs-3,
 .sd-fs-3 > p {
   color: $brand-color-2;
+}
+
+span.highlighted {
+  background-color: transparentize($brand-color-2, 0.6);
+}
+
+code,
+.sig-name {
+  color: $color-11;
 }
 
 .admonition,
 div.admonition {
   box-shadow: $box-shadow-1;
   background-color: $brand-color-8;
+}
+
+.admonition.seealso {
+  border-color: $brand-color-2;
+  .admonition-title {
+    background-color: transparentize($brand-color-2, 0.9);
+  }
+  .admonition-title:before {
+    color: $brand-color-2;
+  }
+}
+
+.admonition.note,
+div.admonition.note {
+  border-color: $brand-color-4;
+  .admonition-title {
+    background-color: transparentize($brand-color-4, 0.9);
+  }
+  .admonition-title:before {
+    color: $brand-color-4;
+  }
+}
+
+.table {
+  color: inherit;
+}
+
+pre,
+div.contents,
+div.topic {
+  background-color: $brand-color-8;
+  border-radius: 5px;
+  border: inherit;
+  box-shadow: $box-shadow-1;
+  color: $color-1;
+}
+
+blockquote {
+  color: $color-1;
+}
+
+blockquote div > p + p.attribution,
+caption {
+  color: $color-11;
+}
+
+div.header-article-main .header-article__left a,
+div.header-article-main .header-article__left button,
+div.header-article-main .header-article__left label,
+div.header-article-main .header-article__right a,
+div.header-article-main .header-article__right button,
+div.header-article-main .header-article__right label {
+  color: $brand-color-6;
+}
+
+span.guilabel {
+  color: $brand-color-8;
 }
