@@ -222,3 +222,31 @@ div.cell_input {
 .cell_output .output.stderr {
   background: inherit !important;
 }
+
+.cell_output {
+  img {
+    filter: invert(1);
+  }
+}
+
+div.cell_output table {
+  color: inherit !important;
+}
+
+div.cell_output thead {
+  border-bottom: 1px solid white !important;
+}
+div.cell_output tbody tr:nth-child(odd) {
+  background: rgba(66, 165, 245, 0.2) !important;
+}
+div.cell_output tbody tr:nth-child(odd):hover {
+  background: rgba(66, 165, 245, 0.2) !important;
+}
+
+div.cell_output tbody tr:nth-child(even):hover {
+  background: inherit !important;
+}
+
+details.toggle-details {
+  color: black !important;
+}
