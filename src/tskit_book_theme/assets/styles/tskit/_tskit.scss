@@ -223,7 +223,8 @@ div.cell_input {
   background: inherit !important;
 }
 
-.cell_output {
+.cell_output,
+section {
   img {
     filter: invert(1);
   }
