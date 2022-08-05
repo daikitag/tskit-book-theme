@@ -267,4 +267,21 @@ $font-family-sans-serif-2: sofia-pro, sans-serif;
   details.toggle-details {
     color: black !important;
   }
+
+  .sig.c .k,
+  .sig.c .kt,
+  .sig.c .m,
+  .sig.c .s,
+  .sig.c .sc,
+  .sig.cpp .k,
+  .sig.cpp .kt,
+  .sig.cpp .m,
+  .sig.cpp .s,
+  .sig.cpp .sc {
+    color: $color-11 !important;
+  }
+
+  .prev-next-area a p.prev-next-title {
+    color: inherit !important;
+  }
 }
