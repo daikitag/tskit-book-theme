@@ -11,8 +11,9 @@ from sphinx.locale import get_translation
 from sphinx.util import logging
 
 from .nodes import SideNoteNode
-from .header_buttons import prep_header_buttons, add_header_buttons
-from .header_buttons.launch import add_launch_buttons
+
+# from .header_buttons import prep_header_buttons, add_header_buttons
+# from .header_buttons.launch import add_launch_buttons
 from ._transforms import HandleFootnoteTransform
 
 __version__ = "0.3.2"
@@ -183,10 +184,11 @@ def setup(app: Sphinx):
     SideNoteNode.add_node(app)
 
     # Header buttons
-    app.connect("html-page-context", prep_header_buttons)
-    app.connect("html-page-context", add_launch_buttons)
+    # Commented out as this created duplicate buttons
+    #     app.connect("html-page-context", prep_header_buttons)
+    #     app.connect("html-page-context", add_launch_buttons)
     # Bump priority by 1 so that it runs after the pydata theme sets up the edit URL.
-    app.connect("html-page-context", add_header_buttons, priority=501)
+    #     app.connect("html-page-context", add_header_buttons, priority=501)
 
     # Directives
     app.add_directive("margin", Margin, override=True)
