@@ -284,4 +284,8 @@ $font-family-sans-serif-2: sofia-pro, sans-serif;
   .prev-next-area a p.prev-next-title {
     color: inherit !important;
   }
+
+  .viewcode-block:target {
+    background-color: #1a4e56 !important;
+  }
 }
